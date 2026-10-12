@@ -1,0 +1,1512 @@
+{
+  "sects": [
+    {
+      "id": "sword",
+      "name": "剑修",
+      "mark": "剑",
+      "tag": "一剑破万法",
+      "color": "#2d7280",
+      "wash": "#e0eff0",
+      "desc": "以剑意叠势，连击与穿透见长。",
+      "starter": [
+        "strike",
+        "strike",
+        "guard",
+        "guard",
+        "sword-intent",
+        "sword-intent",
+        "sword-rain",
+        "step",
+        "step",
+        "qi-pill",
+        "focus",
+        "focus"
+      ]
+    },
+    {
+      "id": "alchemy",
+      "name": "丹修",
+      "mark": "丹",
+      "tag": "炉火养真",
+      "color": "#b86343",
+      "wash": "#f4e3db",
+      "desc": "炼丹调气，回复与毒火并行。",
+      "starter": [
+        "strike",
+        "strike",
+        "guard",
+        "guard",
+        "alchemy-fire",
+        "alchemy-fire",
+        "refine",
+        "herb",
+        "herb",
+        "qi-pill",
+        "focus",
+        "focus"
+      ]
+    },
+    {
+      "id": "talisman",
+      "name": "符修",
+      "mark": "符",
+      "tag": "一纸镇邪",
+      "color": "#8a6d32",
+      "wash": "#f2ead1",
+      "desc": "符箓连锁，擅长标记与控制。",
+      "starter": [
+        "strike",
+        "strike",
+        "guard",
+        "guard",
+        "thunder-talisman",
+        "thunder-talisman",
+        "seal",
+        "step",
+        "step",
+        "qi-pill",
+        "focus",
+        "focus"
+      ]
+    },
+    {
+      "id": "body",
+      "name": "体修",
+      "mark": "体",
+      "tag": "淬骨炼身",
+      "color": "#9b5147",
+      "wash": "#f2e0da",
+      "desc": "以血换力，格挡与反击滚动。",
+      "starter": [
+        "strike",
+        "strike",
+        "guard",
+        "guard",
+        "iron-skin",
+        "iron-skin",
+        "mountain-crash",
+        "herb",
+        "herb",
+        "qi-pill",
+        "focus",
+        "focus"
+      ]
+    },
+    {
+      "id": "demon",
+      "name": "魔道",
+      "mark": "魔",
+      "tag": "心魔炼道",
+      "color": "#69558d",
+      "wash": "#e9e2f3",
+      "desc": "驾驭心魔，消耗生命换取爆发。",
+      "starter": [
+        "strike",
+        "strike",
+        "guard",
+        "guard",
+        "demon-flame",
+        "demon-flame",
+        "blood-rite",
+        "step",
+        "step",
+        "qi-pill",
+        "focus",
+        "focus"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "strike",
+      "name": "引气斩",
+      "sect": "neutral",
+      "type": "法术",
+      "rarity": "基础",
+      "cost": 1,
+      "art": "╱",
+      "desc": "造成 7 点伤害。",
+      "up": "造成 10 点伤害。",
+      "effect": {
+        "damage": 7
+      },
+      "upgrade": {
+        "damage": 10
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "guard",
+      "name": "凝神护体",
+      "sect": "neutral",
+      "type": "功法",
+      "rarity": "基础",
+      "cost": 1,
+      "art": "◌",
+      "desc": "获得 6 点格挡。",
+      "up": "获得 9 点格挡。",
+      "effect": {
+        "block": 6
+      },
+      "upgrade": {
+        "block": 9
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "focus",
+      "name": "纳灵",
+      "sect": "neutral",
+      "type": "身法",
+      "rarity": "基础",
+      "cost": 0,
+      "art": "✦",
+      "desc": "抽 1 张牌。",
+      "up": "抽 2 张牌。",
+      "effect": {
+        "draw": 1
+      },
+      "upgrade": {
+        "draw": 2
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "step",
+      "name": "踏云步",
+      "sect": "neutral",
+      "type": "身法",
+      "rarity": "基础",
+      "cost": 1,
+      "art": "⌁",
+      "desc": "获得 4 点格挡，抽 1 张牌。",
+      "up": "获得 6 点格挡，抽 1 张牌。",
+      "effect": {
+        "block": 4,
+        "draw": 1
+      },
+      "upgrade": {
+        "block": 6,
+        "draw": 1
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "qi-pill",
+      "name": "回灵丹",
+      "sect": "neutral",
+      "type": "丹药",
+      "rarity": "基础",
+      "cost": 1,
+      "art": "◉",
+      "desc": "回复 3 点气血，抽 1 张牌。消耗。",
+      "up": "回复 5 点气血，抽 1 张牌。消耗。",
+      "effect": {
+        "heal": 3,
+        "draw": 1,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 5,
+        "draw": 1,
+        "exhaust": true
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "sword-intent",
+      "name": "起手剑意",
+      "sect": "sword",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "⚔",
+      "desc": "获得 2 层剑意。抽 1 张牌。",
+      "up": "获得 3 层剑意。抽 1 张牌。",
+      "effect": {
+        "mood": 2,
+        "draw": 1
+      },
+      "upgrade": {
+        "mood": 3,
+        "draw": 1
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "sword-rain",
+      "name": "剑雨回风",
+      "sect": "sword",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 2,
+      "art": "✧",
+      "desc": "造成 15 点伤害。若有剑意，额外造成 5 点。",
+      "up": "造成 20 点伤害。额外伤害变为 7 点。",
+      "effect": {
+        "damage": 15,
+        "ifMood": 5
+      },
+      "upgrade": {
+        "damage": 20,
+        "ifMood": 7
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "sword-pierce",
+      "name": "破甲剑",
+      "sect": "sword",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "art": "⟐",
+      "desc": "造成 12 点伤害，穿透敌方 8 点格挡。",
+      "up": "造成 16 点伤害，穿透敌方 12 点格挡。",
+      "effect": {
+        "damage": 12,
+        "pierce": 8
+      },
+      "upgrade": {
+        "damage": 16,
+        "pierce": 12
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "sword-oath",
+      "name": "太白剑誓",
+      "sect": "sword",
+      "type": "功法",
+      "rarity": "传说",
+      "cost": 2,
+      "art": "☼",
+      "desc": "本场战斗每打出第 3 张牌，获得 1 层剑意。消耗。同名功法不叠加。",
+      "up": "每打出第 2 张牌，获得 1 层剑意。消耗。",
+      "effect": {
+        "passive": "comboMood"
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "alchemy-fire",
+      "name": "赤焰丹火",
+      "sect": "alchemy",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "♨",
+      "desc": "造成 6 点伤害，施加 2 层灼烧。",
+      "up": "造成 9 点伤害，施加 3 层灼烧。",
+      "effect": {
+        "damage": 6,
+        "burn": 2
+      },
+      "upgrade": {
+        "damage": 9,
+        "burn": 3
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "refine",
+      "name": "炼丹调息",
+      "sect": "alchemy",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "◒",
+      "desc": "回复 5 点气血。若气血低于 50%，再回复 4 点。",
+      "up": "回复 7 点气血，低于 50% 再回复 5 点。",
+      "effect": {
+        "heal": 5,
+        "lowHeal": 4
+      },
+      "upgrade": {
+        "heal": 7,
+        "lowHeal": 5
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "herb",
+      "name": "青木灵草",
+      "sect": "alchemy",
+      "type": "丹药",
+      "rarity": "基础",
+      "cost": 0,
+      "art": "❧",
+      "desc": "回复 4 点气血。消耗。",
+      "up": "回复 7 点气血。消耗。",
+      "effect": {
+        "heal": 4,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 7,
+        "exhaust": true
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "alchemy-venom",
+      "name": "百草蚀心",
+      "sect": "alchemy",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "art": "❈",
+      "desc": "施加 6 层中毒；若敌人灼烧≥3，再造成 12 点伤害。",
+      "up": "施加 8 层中毒；条件伤害变为 16 点。",
+      "effect": {
+        "poison": 6,
+        "comboDamage": 12
+      },
+      "upgrade": {
+        "poison": 8,
+        "comboDamage": 16
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "golden-cauldron",
+      "name": "金丹炉心",
+      "sect": "alchemy",
+      "type": "功法",
+      "rarity": "传说",
+      "cost": 2,
+      "art": "◉",
+      "desc": "每回合首次回复气血时，获得 1 点灵力。消耗。同名功法不叠加。",
+      "up": "每回合前两次回复气血时触发。消耗。",
+      "effect": {
+        "passive": "healQi"
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "thunder-talisman",
+      "name": "引雷符",
+      "sect": "talisman",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "ϟ",
+      "desc": "造成 9 点伤害，施加 1 层易伤。",
+      "up": "造成 13 点伤害，施加 2 层易伤。",
+      "effect": {
+        "damage": 9,
+        "vulnerable": 1
+      },
+      "upgrade": {
+        "damage": 13,
+        "vulnerable": 2
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "seal",
+      "name": "缚灵符",
+      "sect": "talisman",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "▣",
+      "desc": "敌人下回合伤害降低 40%，抽 1 张牌。",
+      "up": "降低 55%，抽 1 张牌。",
+      "effect": {
+        "weak": 1,
+        "draw": 1
+      },
+      "upgrade": {
+        "weak": 1,
+        "draw": 1,
+        "weakPower": 0.55
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "talisman-array",
+      "name": "五雷符阵",
+      "sect": "talisman",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "art": "⌘",
+      "desc": "造成 5 点伤害 3 次；每次有 25% 施加 1 层易伤。",
+      "up": "造成 7 点伤害 3 次；每次有 40% 施加 1 层易伤。",
+      "effect": {
+        "multi": 3,
+        "multiDamage": 5
+      },
+      "upgrade": {
+        "multi": 3,
+        "multiDamage": 7
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "paper-doll",
+      "name": "纸人替身",
+      "sect": "talisman",
+      "type": "功法",
+      "rarity": "传说",
+      "cost": 2,
+      "art": "♧",
+      "desc": "本回合免疫首次攻击的气血伤害。消耗。",
+      "up": "本场战斗免疫 2 次攻击的气血伤害。消耗。",
+      "effect": {
+        "passive": "dodge"
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "iron-skin",
+      "name": "铁骨淬体",
+      "sect": "body",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "▰",
+      "desc": "获得 11 点格挡；下回合获得 3 点格挡。",
+      "up": "获得 15 点格挡；下回合获得 5 点格挡。",
+      "effect": {
+        "block": 11,
+        "nextBlock": 3
+      },
+      "upgrade": {
+        "block": 15,
+        "nextBlock": 5
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "mountain-crash",
+      "name": "撼山拳",
+      "sect": "body",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 2,
+      "art": "✹",
+      "desc": "造成 18 点伤害。若本回合格挡≥8，伤害+8。",
+      "up": "造成 24 点伤害，条件伤害+10。",
+      "effect": {
+        "damage": 18,
+        "blockDamage": 8
+      },
+      "upgrade": {
+        "damage": 24,
+        "blockDamage": 10
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "body-counter",
+      "name": "借力打力",
+      "sect": "body",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 1,
+      "art": "◒",
+      "desc": "造成等同当前格挡值的伤害，失去一半格挡。",
+      "up": "造成等同当前格挡值+6 的伤害，失去一半格挡。",
+      "effect": {
+        "blockStrike": 0
+      },
+      "upgrade": {
+        "blockStrike": 6
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "unbroken-vessel",
+      "name": "不坏金身",
+      "sect": "body",
+      "type": "功法",
+      "rarity": "传说",
+      "cost": 2,
+      "art": "☵",
+      "desc": "每回合结束时，若格挡≥10，获得 1 层护体。消耗。同名功法不叠加。",
+      "up": "格挡≥8 即触发。消耗。",
+      "effect": {
+        "passive": "armorAura"
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "demon-flame",
+      "name": "心魔焚身",
+      "sect": "demon",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "art": "♆",
+      "desc": "失去 3 点气血，造成 16 点伤害。",
+      "up": "失去 3 点气血，造成 22 点伤害。",
+      "effect": {
+        "selfDamage": 3,
+        "damage": 16
+      },
+      "upgrade": {
+        "selfDamage": 3,
+        "damage": 22
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "blood-rite",
+      "name": "血祭",
+      "sect": "demon",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 0,
+      "art": "♇",
+      "desc": "失去 5 点气血，获得 2 点灵力。消耗。",
+      "up": "失去 4 点气血，获得 3 点灵力。消耗。",
+      "effect": {
+        "selfDamage": 5,
+        "gainQi": 2,
+        "exhaust": true
+      },
+      "upgrade": {
+        "selfDamage": 4,
+        "gainQi": 3,
+        "exhaust": true
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "shadow-claw",
+      "name": "幽冥爪",
+      "sect": "demon",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "art": "☾",
+      "desc": "造成 20 点伤害；每层心魔使伤害+2。",
+      "up": "造成 26 点伤害；每层心魔使伤害+3。",
+      "effect": {
+        "damage": 20,
+        "heartBonus": 2
+      },
+      "upgrade": {
+        "damage": 26,
+        "heartBonus": 3
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "demon-heart",
+      "name": "魔心借道",
+      "sect": "demon",
+      "type": "功法",
+      "rarity": "传说",
+      "cost": 2,
+      "art": "♠",
+      "desc": "每失去 10 点气血，获得 1 层心魔与 1 点灵力。消耗。同名功法不叠加。",
+      "up": "每失去 8 点气血触发。消耗。",
+      "effect": {
+        "passive": "demonHeart"
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "thunder-tribulation",
+      "name": "天劫·九霄雷",
+      "sect": "neutral",
+      "type": "天劫",
+      "rarity": "天劫",
+      "cost": 0,
+      "art": "☷",
+      "desc": "清空格挡，本回合无法获得格挡；造成 45 点伤害。消耗。",
+      "up": "清空格挡，本回合无法获得格挡；造成 60 点伤害。消耗。",
+      "effect": {
+        "damage": 45,
+        "tribulation": true
+      },
+      "upgrade": {
+        "damage": 60,
+        "tribulation": true
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "tribulation-oath",
+      "name": "天劫·问心",
+      "sect": "neutral",
+      "type": "天劫",
+      "rarity": "天劫",
+      "cost": 1,
+      "art": "◎",
+      "desc": "失去 8 点气血，清空并封锁本回合格挡；获得 3 层意境，抽 2 张牌。消耗。",
+      "up": "失去 6 点气血，清空并封锁本回合格挡；获得 5 层意境，抽 2 张牌。消耗。",
+      "effect": {
+        "selfDamage": 8,
+        "mood": 3,
+        "draw": 2,
+        "tribulation": true
+      },
+      "upgrade": {
+        "selfDamage": 6,
+        "mood": 5,
+        "draw": 2,
+        "tribulation": true
+      },
+      "flavor": "问道不问归途。"
+    },
+    {
+      "id": "spark",
+      "name": "灵火诀",
+      "sect": "neutral",
+      "type": "法术",
+      "rarity": "基础",
+      "cost": 1,
+      "desc": "造成 5 点伤害，施加 1 层灼烧。",
+      "up": "造成 8 点伤害，施加 1 层灼烧。",
+      "effect": {
+        "damage": 5,
+        "burn": 1
+      },
+      "upgrade": {
+        "damage": 8
+      },
+      "flavor": "灯火亦照长生路。",
+      "art": ""
+    },
+    {
+      "id": "stillness",
+      "name": "守心诀",
+      "sect": "neutral",
+      "type": "功法",
+      "rarity": "基础",
+      "cost": 1,
+      "desc": "获得 4 点格挡与 1 层意境。",
+      "up": "获得 7 点格挡与 1 层意境。",
+      "effect": {
+        "block": 4,
+        "mood": 1
+      },
+      "upgrade": {
+        "block": 7
+      },
+      "flavor": "心定，风不动。",
+      "art": ""
+    },
+    {
+      "id": "cloud-slip",
+      "name": "轻身诀",
+      "sect": "neutral",
+      "type": "身法",
+      "rarity": "基础",
+      "cost": 0,
+      "desc": "获得 2 点格挡。消耗。",
+      "up": "获得 5 点格挡。消耗。",
+      "effect": {
+        "block": 2,
+        "exhaust": true
+      },
+      "upgrade": {
+        "block": 5
+      },
+      "flavor": "衣角不沾尘。",
+      "art": ""
+    },
+    {
+      "id": "stone-pill",
+      "name": "固元丹",
+      "sect": "neutral",
+      "type": "丹药",
+      "rarity": "基础",
+      "cost": 1,
+      "desc": "回复 3 点气血，获得 6 点格挡。消耗。",
+      "up": "回复 5 点气血，获得 9 点格挡。消耗。",
+      "effect": {
+        "heal": 3,
+        "block": 6,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 5,
+        "block": 9
+      },
+      "flavor": "一丹护一命。",
+      "art": ""
+    },
+    {
+      "id": "sword-flash",
+      "name": "青锋闪",
+      "sect": "sword",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "造成 8 点伤害；有意境时伤害 +3。",
+      "up": "造成 11 点伤害；有意境时伤害 +4。",
+      "effect": {
+        "damage": 8,
+        "ifMood": 3
+      },
+      "upgrade": {
+        "damage": 11,
+        "ifMood": 4
+      },
+      "flavor": "青锋一点寒。",
+      "art": ""
+    },
+    {
+      "id": "sword-step",
+      "name": "御剑游",
+      "sect": "sword",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "获得 5 点格挡，抽 1 张牌，获得 1 层意境。",
+      "up": "获得 8 点格挡，抽 1 张牌，获得 1 层意境。",
+      "effect": {
+        "block": 5,
+        "draw": 1,
+        "mood": 1
+      },
+      "upgrade": {
+        "block": 8
+      },
+      "flavor": "身随剑起。",
+      "art": ""
+    },
+    {
+      "id": "sword-grind",
+      "name": "磨剑诀",
+      "sect": "sword",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 0,
+      "desc": "获得 1 层意境，抽 1 张牌。消耗。",
+      "up": "获得 2 层意境，抽 1 张牌。消耗。",
+      "effect": {
+        "mood": 1,
+        "draw": 1,
+        "exhaust": true
+      },
+      "upgrade": {
+        "mood": 2
+      },
+      "flavor": "十年磨一剑。",
+      "art": ""
+    },
+    {
+      "id": "sword-moon",
+      "name": "月落剑",
+      "sect": "sword",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "造成 18 点伤害；有意境时伤害 +8。",
+      "up": "造成 24 点伤害；有意境时伤害 +10。",
+      "effect": {
+        "damage": 18,
+        "ifMood": 8
+      },
+      "upgrade": {
+        "damage": 24,
+        "ifMood": 10
+      },
+      "flavor": "月色落在刃上。",
+      "art": ""
+    },
+    {
+      "id": "sword-return",
+      "name": "剑气归元",
+      "sect": "sword",
+      "type": "功法",
+      "rarity": "稀有",
+      "cost": 1,
+      "desc": "获得 3 层意境、1 点灵力，抽 1 张牌。消耗。",
+      "up": "获得 4 层意境、1 点灵力，抽 2 张牌。消耗。",
+      "effect": {
+        "mood": 3,
+        "gainQi": 1,
+        "draw": 1,
+        "exhaust": true
+      },
+      "upgrade": {
+        "mood": 4,
+        "draw": 2
+      },
+      "flavor": "万剑归于一息。",
+      "art": ""
+    },
+    {
+      "id": "alchemy-mist",
+      "name": "毒雾散",
+      "sect": "alchemy",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "施加 3 层中毒。",
+      "up": "施加 4 层中毒。",
+      "effect": {
+        "poison": 3
+      },
+      "upgrade": {
+        "poison": 4
+      },
+      "flavor": "草木亦有杀心。",
+      "art": ""
+    },
+    {
+      "id": "alchemy-breath",
+      "name": "炉边步",
+      "sect": "alchemy",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "获得 6 点格挡，回复 3 点气血。",
+      "up": "获得 9 点格挡，回复 4 点气血。",
+      "effect": {
+        "block": 6,
+        "heal": 3
+      },
+      "upgrade": {
+        "block": 9,
+        "heal": 4
+      },
+      "flavor": "丹烟藏行迹。",
+      "art": ""
+    },
+    {
+      "id": "alchemy-ember",
+      "name": "余烬诀",
+      "sect": "alchemy",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "施加 2 层灼烧，抽 1 张牌。",
+      "up": "施加 3 层灼烧，抽 1 张牌。",
+      "effect": {
+        "burn": 2,
+        "draw": 1
+      },
+      "upgrade": {
+        "burn": 3
+      },
+      "flavor": "炉冷，火未尽。",
+      "art": ""
+    },
+    {
+      "id": "alchemy-elixir",
+      "name": "还魂丹",
+      "sect": "alchemy",
+      "type": "丹药",
+      "rarity": "稀有",
+      "cost": 1,
+      "desc": "回复 12 点气血。消耗。",
+      "up": "回复 17 点气血。消耗。",
+      "effect": {
+        "heal": 12,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 17
+      },
+      "flavor": "一缕魂归来。",
+      "art": ""
+    },
+    {
+      "id": "alchemy-furnace",
+      "name": "地火焚心",
+      "sect": "alchemy",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "造成 12 点伤害，施加 4 层灼烧。",
+      "up": "造成 16 点伤害，施加 5 层灼烧。",
+      "effect": {
+        "damage": 12,
+        "burn": 4
+      },
+      "upgrade": {
+        "damage": 16,
+        "burn": 5
+      },
+      "flavor": "地火炼凡心。",
+      "art": ""
+    },
+    {
+      "id": "talisman-ward",
+      "name": "护山符",
+      "sect": "talisman",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "获得 9 点格挡。",
+      "up": "获得 13 点格挡。",
+      "effect": {
+        "block": 9
+      },
+      "upgrade": {
+        "block": 13
+      },
+      "flavor": "一纸守青山。",
+      "art": ""
+    },
+    {
+      "id": "talisman-blink",
+      "name": "缩地符",
+      "sect": "talisman",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 0,
+      "desc": "抽 2 张牌。消耗。",
+      "up": "抽 3 张牌。消耗。",
+      "effect": {
+        "draw": 2,
+        "exhaust": true
+      },
+      "upgrade": {
+        "draw": 3
+      },
+      "flavor": "方寸即天涯。",
+      "art": ""
+    },
+    {
+      "id": "talisman-scorch",
+      "name": "离火符",
+      "sect": "talisman",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "造成 7 点伤害，施加 2 层灼烧。",
+      "up": "造成 10 点伤害，施加 3 层灼烧。",
+      "effect": {
+        "damage": 7,
+        "burn": 2
+      },
+      "upgrade": {
+        "damage": 10,
+        "burn": 3
+      },
+      "flavor": "朱砂燃作赤霞。",
+      "art": ""
+    },
+    {
+      "id": "talisman-chain",
+      "name": "锁魂符",
+      "sect": "talisman",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "造成 12 点伤害，施加 2 层虚弱与 2 层易伤。",
+      "up": "造成 17 点伤害，施加 2 层虚弱与 3 层易伤。",
+      "effect": {
+        "damage": 12,
+        "weak": 2,
+        "vulnerable": 2
+      },
+      "upgrade": {
+        "damage": 17,
+        "vulnerable": 3
+      },
+      "flavor": "灵台落一把锁。",
+      "art": ""
+    },
+    {
+      "id": "talisman-circle",
+      "name": "镇灵法阵",
+      "sect": "talisman",
+      "type": "功法",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "获得 17 点格挡，下回合获得 5 点格挡。",
+      "up": "获得 23 点格挡，下回合获得 7 点格挡。",
+      "effect": {
+        "block": 17,
+        "nextBlock": 5
+      },
+      "upgrade": {
+        "block": 23,
+        "nextBlock": 7
+      },
+      "flavor": "阵起，万邪止步。",
+      "art": ""
+    },
+    {
+      "id": "body-palm",
+      "name": "碎石掌",
+      "sect": "body",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "造成 9 点伤害；格挡 ≥8 时伤害 +4。",
+      "up": "造成 12 点伤害；格挡 ≥8 时伤害 +6。",
+      "effect": {
+        "damage": 9,
+        "blockDamage": 4
+      },
+      "upgrade": {
+        "damage": 12,
+        "blockDamage": 6
+      },
+      "flavor": "掌中有山河。",
+      "art": ""
+    },
+    {
+      "id": "body-root",
+      "name": "盘根步",
+      "sect": "body",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "获得 7 点格挡，抽 1 张牌。",
+      "up": "获得 10 点格挡，抽 1 张牌。",
+      "effect": {
+        "block": 7,
+        "draw": 1
+      },
+      "upgrade": {
+        "block": 10
+      },
+      "flavor": "足下生根。",
+      "art": ""
+    },
+    {
+      "id": "body-blood",
+      "name": "养血丹",
+      "sect": "body",
+      "type": "丹药",
+      "rarity": "进阶",
+      "cost": 0,
+      "desc": "回复 5 点气血，获得 3 点格挡。消耗。",
+      "up": "回复 8 点气血，获得 5 点格挡。消耗。",
+      "effect": {
+        "heal": 5,
+        "block": 3,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 8,
+        "block": 5
+      },
+      "flavor": "血气如春潮。",
+      "art": ""
+    },
+    {
+      "id": "body-wall",
+      "name": "玄武壁",
+      "sect": "body",
+      "type": "功法",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "获得 22 点格挡，下回合获得 4 点格挡。",
+      "up": "获得 29 点格挡，下回合获得 6 点格挡。",
+      "effect": {
+        "block": 22,
+        "nextBlock": 4
+      },
+      "upgrade": {
+        "block": 29,
+        "nextBlock": 6
+      },
+      "flavor": "肩上可负山。",
+      "art": ""
+    },
+    {
+      "id": "body-quake",
+      "name": "裂地震",
+      "sect": "body",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "造成 20 点伤害，施加 2 层虚弱。",
+      "up": "造成 27 点伤害，施加 2 层虚弱。",
+      "effect": {
+        "damage": 20,
+        "weak": 2
+      },
+      "upgrade": {
+        "damage": 27
+      },
+      "flavor": "大地应拳而鸣。",
+      "art": ""
+    },
+    {
+      "id": "demon-rush",
+      "name": "血影步",
+      "sect": "demon",
+      "type": "身法",
+      "rarity": "进阶",
+      "cost": 0,
+      "desc": "失去 2 点气血，抽 2 张牌。",
+      "up": "失去 2 点气血，抽 3 张牌。",
+      "effect": {
+        "selfDamage": 2,
+        "draw": 2
+      },
+      "upgrade": {
+        "draw": 3
+      },
+      "flavor": "影走，血未凉。",
+      "art": ""
+    },
+    {
+      "id": "demon-veil",
+      "name": "幽冥护身",
+      "sect": "demon",
+      "type": "功法",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "失去 2 点气血，获得 14 点格挡。",
+      "up": "失去 2 点气血，获得 19 点格挡。",
+      "effect": {
+        "selfDamage": 2,
+        "block": 14
+      },
+      "upgrade": {
+        "block": 19
+      },
+      "flavor": "借阴魂护此身。",
+      "art": ""
+    },
+    {
+      "id": "demon-drain",
+      "name": "噬魂术",
+      "sect": "demon",
+      "type": "法术",
+      "rarity": "进阶",
+      "cost": 1,
+      "desc": "造成 8 点伤害，回复 2 点气血。",
+      "up": "造成 11 点伤害，回复 3 点气血。",
+      "effect": {
+        "damage": 8,
+        "heal": 2
+      },
+      "upgrade": {
+        "damage": 11,
+        "heal": 3
+      },
+      "flavor": "一念吞魂。",
+      "art": ""
+    },
+    {
+      "id": "demon-night",
+      "name": "永夜烬",
+      "sect": "demon",
+      "type": "法术",
+      "rarity": "稀有",
+      "cost": 2,
+      "desc": "失去 5 点气血，造成 30 点伤害。",
+      "up": "失去 5 点气血，造成 40 点伤害。",
+      "effect": {
+        "selfDamage": 5,
+        "damage": 30
+      },
+      "upgrade": {
+        "damage": 40
+      },
+      "flavor": "夜尽，心火不灭。",
+      "art": ""
+    },
+    {
+      "id": "demon-cycle",
+      "name": "逆命还元",
+      "sect": "demon",
+      "type": "丹药",
+      "rarity": "稀有",
+      "cost": 1,
+      "desc": "回复 9 点气血，获得 1 点灵力。消耗。",
+      "up": "回复 13 点气血，获得 1 点灵力。消耗。",
+      "effect": {
+        "heal": 9,
+        "gainQi": 1,
+        "exhaust": true
+      },
+      "upgrade": {
+        "heal": 13
+      },
+      "flavor": "向死处借生。",
+      "art": ""
+    },
+    {
+      "id": "tribulation-frost",
+      "name": "天劫·寒渊",
+      "sect": "neutral",
+      "type": "天劫",
+      "rarity": "天劫",
+      "cost": 0,
+      "desc": "失去 6 点气血，获得 18 点格挡，抽 1 张牌。消耗。",
+      "up": "失去 5 点气血，获得 25 点格挡，抽 1 张牌。消耗。",
+      "effect": {
+        "selfDamage": 6,
+        "block": 18,
+        "draw": 1,
+        "exhaust": true
+      },
+      "upgrade": {
+        "selfDamage": 5,
+        "block": 25
+      },
+      "flavor": "寒渊也有生门。",
+      "art": ""
+    },
+    {
+      "id": "tribulation-flame",
+      "name": "天劫·业火",
+      "sect": "neutral",
+      "type": "天劫",
+      "rarity": "天劫",
+      "cost": 0,
+      "desc": "失去 10 点气血，施加 8 层灼烧。消耗。",
+      "up": "失去 8 点气血，施加 11 层灼烧。消耗。",
+      "effect": {
+        "selfDamage": 10,
+        "burn": 8,
+        "exhaust": true
+      },
+      "upgrade": {
+        "selfDamage": 8,
+        "burn": 11
+      },
+      "flavor": "业火照见前生。",
+      "art": ""
+    },
+    {
+      "id": "tribulation-fate",
+      "name": "天劫·逆命",
+      "sect": "neutral",
+      "type": "天劫",
+      "rarity": "天劫",
+      "cost": 0,
+      "desc": "失去 12 点气血，获得 3 点灵力，抽 3 张牌。消耗。",
+      "up": "失去 9 点气血，获得 4 点灵力，抽 3 张牌。消耗。",
+      "effect": {
+        "selfDamage": 12,
+        "gainQi": 3,
+        "draw": 3,
+        "exhaust": true
+      },
+      "upgrade": {
+        "selfDamage": 9,
+        "gainQi": 4
+      },
+      "flavor": "天命由此改写。",
+      "art": ""
+    }
+  ],
+  "enemies": {
+    "1": [
+      {
+        "name": "荒野狐妖",
+        "epithet": "借月吐纳的山精",
+        "hp": 42,
+        "damage": 8,
+        "pattern": [
+          "attack",
+          "attack",
+          "vulnerable"
+        ]
+      },
+      {
+        "name": "青竹剑侍",
+        "epithet": "残存一缕剑意",
+        "hp": 48,
+        "damage": 9,
+        "pattern": [
+          "blockAttack",
+          "attack",
+          "attack"
+        ]
+      },
+      {
+        "name": "纸甲傀儡",
+        "epithet": "符火未熄",
+        "hp": 55,
+        "damage": 7,
+        "pattern": [
+          "block",
+          "attack",
+          "weak"
+        ]
+      },
+      {
+        "name": "枯藤精",
+        "epithet": "守着一段失落的道统",
+        "hp": 55,
+        "damage": 10,
+        "pattern": [
+          "poison",
+          "attack",
+          "blockAttack"
+        ]
+      },
+      {
+        "name": "游山散修",
+        "epithet": "此路不许凡人过",
+        "hp": 58,
+        "damage": 11,
+        "pattern": [
+          "attack",
+          "weak",
+          "block",
+          "attack"
+        ]
+      }
+    ],
+    "2": [
+      {
+        "name": "赤炼蜈蚣",
+        "epithet": "盘踞地火窟",
+        "hp": 78,
+        "damage": 12,
+        "pattern": [
+          "poison",
+          "attack",
+          "attack"
+        ]
+      },
+      {
+        "name": "玄冰道童",
+        "epithet": "守门三百年",
+        "hp": 72,
+        "damage": 13,
+        "pattern": [
+          "block",
+          "vulnerable",
+          "attack"
+        ]
+      },
+      {
+        "name": "摄魂灯灵",
+        "epithet": "灯芯藏着旧魂",
+        "hp": 68,
+        "damage": 14,
+        "pattern": [
+          "weak",
+          "attack",
+          "attack"
+        ]
+      },
+      {
+        "name": "地火巡使",
+        "epithet": "守着一段失落的道统",
+        "hp": 80,
+        "damage": 15,
+        "pattern": [
+          "poison",
+          "attack",
+          "blockAttack"
+        ]
+      },
+      {
+        "name": "寒潭灵蛇",
+        "epithet": "此路不许凡人过",
+        "hp": 82,
+        "damage": 16,
+        "pattern": [
+          "attack",
+          "weak",
+          "block",
+          "attack"
+        ]
+      }
+    ],
+    "3": [
+      {
+        "name": "金甲狮王",
+        "epithet": "吞过九颗内丹",
+        "hp": 126,
+        "damage": 18,
+        "pattern": [
+          "attack",
+          "blockAttack",
+          "attack"
+        ]
+      },
+      {
+        "name": "离火鸾鸟",
+        "epithet": "一羽可焚城",
+        "hp": 112,
+        "damage": 20,
+        "pattern": [
+          "burn",
+          "attack",
+          "vulnerable"
+        ]
+      },
+      {
+        "name": "无相剑魄",
+        "epithet": "只剩一道执念",
+        "hp": 105,
+        "damage": 21,
+        "pattern": [
+          "attack",
+          "weak",
+          "attack"
+        ]
+      },
+      {
+        "name": "雷池卫",
+        "epithet": "守着一段失落的道统",
+        "hp": 105,
+        "damage": 20,
+        "pattern": [
+          "poison",
+          "attack",
+          "blockAttack"
+        ]
+      },
+      {
+        "name": "无面禅师",
+        "epithet": "此路不许凡人过",
+        "hp": 106,
+        "damage": 21,
+        "pattern": [
+          "attack",
+          "weak",
+          "block",
+          "attack"
+        ]
+      }
+    ]
+  },
+  "bosses": {
+    "1": {
+      "name": "镇岳玄龟",
+      "epithet": "背负一座旧山",
+      "hp": 148,
+      "damage": 13,
+      "pattern": [
+        "blockAttack",
+        "attack",
+        "quake",
+        "attack"
+      ],
+      "symbol": "龟",
+      "reward": "玄龟甲片"
+    },
+    "2": {
+      "name": "九尾天狐",
+      "epithet": "借众生梦境修行",
+      "hp": 228,
+      "damage": 18,
+      "pattern": [
+        "illusion",
+        "attack",
+        "vulnerable",
+        "attack"
+      ],
+      "symbol": "狐",
+      "reward": "九尾灵契"
+    },
+    "3": {
+      "name": "太虚剑尊",
+      "epithet": "此界最后一位飞升者",
+      "hp": 320,
+      "damage": 24,
+      "pattern": [
+        "attack",
+        "swordRain",
+        "blockAttack",
+        "tribulation"
+      ],
+      "symbol": "剑",
+      "reward": "太虚道果"
+    }
+  }
+}
